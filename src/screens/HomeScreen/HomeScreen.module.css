@@ -1,0 +1,36 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.map {
+    display: flex;
+    gap: 38px;
+    padding: 24px;
+    margin-top: 24px;
+    border-radius: 4px;
+}
+.map > div {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.map iframe {
+    width: 70%;
+    height: 320px;
+    box-shadow: 0 0 1px var(--link-color);
+    border: 10px solid var(--main2-color);
+}
+@media (max-width: 500px) {
+    .map {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 24px;
+        gap: 12px;
+        padding: 0;
+    }
+    .map iframe {
+        width: 100%;
+    }
+}
